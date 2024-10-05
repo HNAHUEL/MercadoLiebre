@@ -1,56 +1,103 @@
-<footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../mercadoliebre/Css/register.css">
+    <script src="https://kit.fontawesome.com/2a4205985d.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <section>
-        <h3>Paga con tarjeta o en efectivo</h3>
-        <p>Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o en efectivo en puntos de pago ¡Y siempre es
-            seguro!
-        </p>
-        <h3>Envio gratis desde $2.500</h3>
-        <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de
-            Mercado Puntos</p>
-        <h3>Seguridad de principio a fin</h3>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
-            protegid@</p>
-        <h4>Copyright © 1999-2020 MercadoLiebreS.R.L </h4>
-
-    </section>
-    <!--register.html-->
-    <section>
-        <form action="" method="get">
-            <label for="Nombre y Apellido">Nombre y Apellido</label>
-            <input type="text" name="nombre y apellido" id="nombre y apellido">
-            <label for="Nombre de Usuario">Nombre de Usuario</label>
-            <input type="text" name="nombre de usuario" id="nombre de usuario">
-            <label for="email">email</label>
-            <input type="text" name="email" id="email">
-            <label for="Domicilio">Domicilio</label>
-            <input type="text" name="Domicilio" id="Domicilio"><br>
-
-            <h4>Perfil del Usuario</h4>
-            <label for="Compra"> Compra</label>
-            <input type="radio" name="Perfil del Usuario" id="Compra">
-            <label for="Venta"> Venta</label>
-            <input type="radio" name="Perfil del Usuario" id="Venta">
-            <h3>Categorias</h3>
-            <label for="">Electro</label>
-            <input type="checkbox" name="Categorias" value="Electro">
-            <label for="">Moda</label>
-            <input type="checkbox" name="Categorias" value="Moda">
-            <label for="">Hogar</label>
-            <input type="checkbox" name="Categorias" value="Hogar">
-            <label for="">Jugueteria</label>
-            <input type="checkbox" name="Categorias" value="Jugueteria">
-            <label for="">Vida Sana</label>
-            <input type="checkbox" name="Categorias" value="">
-            <input type="file" name="avatar" id="avatar" accept="image/png, image/jpg"><br>
-            <label for="Password"></label>Contraseña</label>
-            <input type="password" name="Password" id="Pass1">
-            <label for="password">Repetir Contraseña</label>
-            <input type="password" name="password" id="pass2" required>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
+        <form class="formulario-section" action="" method="get">
+            <div>
+                <input class="formulario-register" type="text" placeholder="Nombre y Apellido">
+            </div>
+            <div>
+                <input class="formulario-register" type="text" placeholder="Nombre de Usuario">
+            </div>
+            <div>
+                <input class="formulario-register" type="text" placeholder="email" required>
+            </div>
+            <div>
+                <input class="formulario-register" type="date">
+            </div>
+            <div>
+                <input class="formulario-register" type="text" placeholder="Domicilio">
+            </div>
+            <div>
+                <h4>Perfil del Usuario</h4>
+            </div>
+            <div>
+                <label for="Compra"> Compra</label>
+                <input class="formulario-register" type="radio" name="Perfil del Usuario" id="Compra">
+                <label for="Venta"> Venta</label>
+                <input class="formulario-register" type="radio" name="Perfil del Usuario" id="Venta">
+            </div>
+            <div>
+                <h3>Categorias</h3>
+            </div>
+            <div>
+                <label for="">Electro</label>
+                <input class="formulario-register" type="checkbox" name="Categorias" value="Electro">
+            </div>
+            <div>
+                <label for="">Moda</label>
+                <input class="formulario-register" type="checkbox" name="Categorias" value="Moda">
+            </div>
+            <div>
+                <label for="">Hogar</label>
+                <input class="formulario-register" type="checkbox" name="Categorias" value="Hogar">
+            </div>
+            <div>
+                <label for="">Jugueteria</label>
+                <input class="formulario-register" type="checkbox" name="Categorias" value="Jugueteria">
+            </div>
+            <div>
+                <label for="">Vida Sana</label>
+                <input class="formulario-register" type="checkbox" name="Categorias" value="Vida Sana">
+            </div>
+            <!--
+            <input class="formulario-register" type="file" name="avatar" id="avatar" accept="image/png, image/jpg">
+            -->
+            <div>
+                <input class="formulario-register" type="password" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <input class="formulario-register" type="password" placeholder="Repetir Contraseña" required>
+            </div>
+            <div>
+                <button class="formulario-botton" type="submit">Enviar</button>
+                <button class="formulario-botton" type="reset">Borrar</button>
+            </div>
         </form>
-    </section>
-</footer>
+    </section>  
 </body>
+</html>
+<!--
+<footer>
+    
+    <section>
+        <div>
+            <h3>Paga con tarjeta o en efectivo</h3>
+            <p>Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o en efectivo en puntos de pago ¡Y siempre es
+                seguro!
+            </p>
+        </div>
+        <div>
+            <h3>Envio gratis desde $2.500</h3>
+            <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de
+                Mercado Puntos</p>
+        </div>
+        <div>
+            <h3>Seguridad de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
+                protegid@</p>
+        </div>
+        <h4>Copyright © 1999-2020 MercadoLiebreS.R.L </h4>
+    </section> 
+    
+    register.html-->
+</footer>
 
 </html>

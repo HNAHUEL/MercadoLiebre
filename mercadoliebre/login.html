@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado liebre</title>
+    <script src="https://kit.fontawesome.com/2a4205985d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../mercadoliebre/Css/login.css">
 </head>
 
 <body>
     <header>
-        <img src="hpp/.IMAGENES/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-        <!--login.html-->
-        <form>
-            <label>Nombre de Usuario</label>
-            <input type="text" id="">
-            <label>Contraseña</label>
-            <input type="text" id="">
-            <button type="submit">Enviar</button>
-        </form>
-        <p>Compra en cuotas y sin tarjeta de credito</p>
+        <div class="logo">
+            <img src="./IMAGENES/logo-mercado-liebre.svg" alt="logo-mercado-liebre" id="logo">
+        </div>
+        <div class="buscar">
+            <form action="buscar" method="get">
+                <input type="text" name="search" placeholder="buscar">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="info-credito">
+            <p>Compra en cuotas y sin tarjeta de credito</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="">Ofertas</a></li>
@@ -27,12 +31,44 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
 
-
-
             <ul>
-                <li><a href="">Crear Cuenta</a></li>
-                <li><a href="C:\Users\nahue\OneDrive\Escritorio\TP.N°2\mercadoliebre\txt.html">Ingresa</a></li>
+                <li><a href="http://127.0.0.1:5500/mercadoliebre/register.html">Crear Cuenta</a></li>
+                <li><a href="http://127.0.0.1:5500/mercadoliebre/login.html">Ingresa</a></li>
                 <li><a href="">Mis compras</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <form class="formulario">
+            <input class="formulario-input" type="text" placeholder="Nombre de usuario">
+            <input class="formulario-input" type="password" placeholder="Contraseña">
+            <input class="formulario-input formulario-submit" type="submit" id="button"><a
+                href="http://127.0.0.1:5500/mercadoliebre/txt.html"></a></input>
+        </form>
+    </main>
+    <section>
+        <article>
+            <i class="fa-solid fa-credit-card footer-icono"></i>
+            <h3>Paga con tarjeta o en efectivo</h3>
+            <p>Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o en efectivo en puntos de pago ¡Y siempre
+                es
+                seguro!
+            </p>
+        </article>
+        <article>
+            <i class="fa-solid fa-gift footer-icono"></i>
+            <h3>Envio gratis desde $2.500</h3>
+            <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un
+                beneficio de
+                Mercado Puntos</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-user-shield footer-icono"></i>
+            <h3>Seguridad de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
+                protegid@</p>
+        </article>
+    <h4>Copyright © 1999-2020 MercadoLiebreS.R.L </h4>
+
+    </section>
+</body>

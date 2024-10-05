@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado liebre</title>
+    <script src="https://kit.fontawesome.com/2a4205985d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../mercadoliebre/Css/styles.css">
 </head>
 
 <body>
     <header>
-        <img src="./IMAGENES/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-        <h1>mercado liebre</h1>
-        <form>
-            <input type="text">
-        </form>
-        <p>Compra en cuotas y sin tarjeta de credito</p>
+        <div class="logo" id="logo">
+            <img src="./IMAGENES/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+        </div>
+        <div>
+            <form action="buscar" method="get">
+                <input class="buscar" type="text" name="buscar" placeholder="buscar">
+                <button type="submit"> buscar</button>
+            </form>
+        </div>
+        <div class="info-credito">
+            <p>Compra en cuotas y sin tarjeta de credito</p><i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
         <nav>
             <ul>
                 <li><a href="">Ofertas</a></li>
@@ -22,80 +30,82 @@
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
             </ul>
-
-
-
             <ul>
-                <li><a href="">Crear Cuenta</a></li>
-                <li><a href="">Ingresa</a></li>
+                <li><a href="http://127.0.0.1:5500/mercadoliebre/register.html">Crear Cuenta</a></li><i class="fa-solid fa-address-card"></i>
+                <li><a href="http://127.0.0.1:5500/mercadoliebre/login.html">Ingresa</a></li>
                 <li><a href="">Mis compras</a></li>
             </ul>
         </nav>
+        <div class="burguer-menu"><i class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <main>
+        <img src="./IMAGENES/img-home-banner.jpg" alt="Banner" height="100px">
         <section>
-            <h2>Visto</h2>
+            <div>
+                <h2>Visto</h2>
+            </div>
             <article>
-                <img src="./IMAGENES/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
+                <img src="./IMAGENES/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" height="400px">
                 <p>$6.770 40%OFF</p>
-                <h2>
-                    <p>Cafetera Moulinex</p>
-                </h2>
+                <div class="h4">
+                    <h4>Cafetera Moulinex</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
+                <img src="./IMAGENES/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" height="400px">
                 <p>$230.000 20%OFF</p>
-                <h2>
-                    <p>Macbook Pro-2019</p>
-                </h2>
+                <div class="h4">
+                    <h4>Macbook Pro-2019</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
+                <img src="./IMAGENES/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" height="400px">
                 <p>$70.500 10%OFF</p>
-                <h2>
-                    <p>Samsung galaxy s10</p>
-                </h2>
+                <div class="h4">
+                    <h4>Samsung galaxy s10</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
+                <img src="./IMAGENES/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" height="400">
                 <p>$23.200 5%OFF</p>
-                <h2>
-                    <p>tv Samsung Smart</p>
-                </h2>
+                <div class="h4">
+                    <h4>tv Samsung Smart</h4>
+                </div>
             </article>
         </section>
 
-        <img src="./IMAGENES/img-home-banner.jpg" alt="Banner" width="900px">
-
         <section>
-            <h2>OFERTAS</h2>
+            <div>
+                <h2>OFERTAS</h2>
+            </div>
             <article>
-                <img src="./IMAGENES/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
+                <img src="./IMAGENES/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" height="400px">
                 <p>$6.770 40%OFF</p>
-                <h4>
-                    <p>Cafetera Moulinex</p>
-                </h4>
+                <div class="h4">
+                    <h4>Cafetera Moulinex</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
+                <img src="./IMAGENES/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" height="400px">
                 <p>$230.000 20%OFF</p>
-                <h4>
-                    <p>Macbook Pro-2019</p>
-                </h4>
+                <div class="h4">
+                    <h4>Macbook Pro-2019</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
+                <img src="./IMAGENES/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" height="400px">
                 <p>$70.500 10%OFF</p>
-                <h4>
-                    <p>Samsung galaxy s10</p>
-                </h4>
+                <div class="h4">
+                    <h4>Samsung galaxy s10</h4>
+                </div>
             </article>
             <article>
-                <img src="./IMAGENES/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
+                <img src="./IMAGENES/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" height="400px">
                 <p>$23.200 5%OFF</p>
-                <h4>
-                    <p>tv Samsung Smart</p>
-                </h4>
+                <div class="h4">
+                    <h4>tv Samsung Smart</h4>
+                </div>
             </article>
         </section>
     </main>
@@ -103,22 +113,28 @@
 
     <footer>
         <section>
-            <h3>Paga con tarjeta o en efectivo</h3>
-            <p>Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o en efectivo en puntos de pago ¡Y siempre es
-                seguro!
-            </p>
-        </section>
-        <section>
-            <h3>Envio gratis desde $2.500</h3>
-            <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de
-                Mercado Puntos</p>
-        </section>
-        <section>
-            <h3>Seguridad de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
-                protegid@</p>
-        </section>
-        <h4>Copyright © 1999-2020 MercadoLiebreS.R.L </h4>
+            <article>
+                <i class="fa-solid fa-credit-card footer-icono"></i>
+                <h3>Paga con tarjeta o en efectivo</h3>
+                <p>Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o en efectivo en puntos de pago ¡Y siempre
+                    es
+                    seguro!
+                </p>
+            </article>
+            <article>
+                <i class="fa-solid fa-gift footer-icono"></i>
+                <h3>Envio gratis desde $2.500</h3>
+                <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un
+                    beneficio de
+                    Mercado Puntos</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-user-shield footer-icono"></i>
+                <h3>Seguridad de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
+                    protegid@</p>
+            </article>
+            <h4>Copyright © 1999-2020 MercadoLiebreS.R.L </h4>
 
         </section>
     </footer>
