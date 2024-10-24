@@ -1,60 +1,113 @@
-.body{
+* {
+    padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
-header{
+
+.body {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
     background: #eac926;
     width: 100%;
-    height: 100%;
+    display: flex;
     padding: 10px;
+    flex-direction: column;
 }
-.logo{
+
+main {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.logo {
     width: 50%;
-    height: 80%;
 }
-.fa-bars{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+
+.logo img {
+    width: 200px;
+    height: 100px;
+
+}
+
+.nav-header {
+    display: none;
+}
+
+.burger-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
     text-align: center;
     background-color: #1259c3;
     color: white;
     padding: 5px;
 }
 
-.parrafo{
-    display: inline-block;
-}
-.login{
+.parrafo {
     display: inline-block;
 }
 
-section{
+.login {
+    display: inline-block;
+}
+
+h4 {
+    visibility: hidden;
+}
+
+.section {
     background-color: #ebebeb;
-    text-align: center;
     width: 100%;
-    height: 100%;
-    margin: solid 5px;;
+    margin: solid 5px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer-icono{
-    color: #1259c3;
-    font-size: 2em;
+.img img {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    height: auto;
 }
-article{
+
+article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     margin: solid 1px;
     background-color: white;
     width: 100%;
-    height: 100%;
     text-align: center;
     border: #666 1px solid;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 10px 2px 2px;
+    margin: 10px 2px;
 }
-.circulo{
+
+
+.parrafo {
+    background-color: white(255, 0, 0);
+    padding-top: 2px;
+    font-size: 16px;
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+}
+
+.circulo {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -63,31 +116,108 @@ article{
     align-items: center;
     justify-content: center;
     padding: 10px;
-   /*padding: 5px;*/
+    /*padding: 5px;*/
 }
-.fa-truck-fast{
+
+.fa-truck-fast {
     padding: 10px;
     color: #39b54a;
 }
 
-@media screen and(min-width:768px) and (max-width:1024px) {
-article{ 
-    width: 20%;
-    height: 20%;
-    text-align: center;
-    padding: 10%;
+footer {
+    background-color: white;
+    display: flex;
 
 }
-    
-}
 
-@media screen and (min-width:768px) and (max-width:1024px){
-    .body{
-    background-color:#ababab;
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .articulos-footer {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
-    .circulo{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        padding: 10px;}
+}
+
+.footer-icono {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.art-footer {
+    text-align: center;
+    box-shadow: none;
+    border: none;
+}
+
+@media(min-width:768px) {
+
+    .logo {
+        width: 100%;
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+    }
+
+    .barra-busqueda {
+        padding: 10px;
+    }
+
+    .frase-header {
+        text-align: center;
+    }
+
+    .nav-header {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        visibility: visible;
+    }
+
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+        display: inline-block;
+
+        grid-template-columns: repeat(3, 2);
+
+        display: flex;
+        padding: 15px;
+    }
+}
+
+@media(min-width:1024px) {
+    .buscar {
+        width: 270px;
+        height: 25px;
+    }
+
+    .fa-magnifying-glass {
+        height: 19px;
+        width: 20px;
+    }
+
+    .lupa {
+        display: flex;
+        align-items: center;
+    }
 }
